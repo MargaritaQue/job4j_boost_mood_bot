@@ -1,9 +1,9 @@
-package ru.job4j;
+package ru.job4j.service;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
-public class AchievementService {
+public class MoodService {
 
     @PostConstruct
     public void init() {

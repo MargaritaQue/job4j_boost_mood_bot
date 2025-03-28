@@ -1,9 +1,9 @@
-package ru.job4j;
+package ru.job4j.engine;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
-public class ReminderService {
+public class RecommendationEngine {
 
     @PostConstruct
     public void init() {
