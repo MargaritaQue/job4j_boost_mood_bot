@@ -23,7 +23,7 @@ public class TgRemoteService extends TelegramLongPollingBot {
     private final String botName;
     private final String botToken;
     private final UserRepository userRepository;
-    private static Map<String, String> MOOD_RESP = new HashMap<>();
+    private static final Map<String, String> MOOD_RESP = new HashMap<>();
 
     static {
         MOOD_RESP.put("lost_sock", "Носки — это коварные создания. Но не волнуйся, второй обязательно найдётся!");
