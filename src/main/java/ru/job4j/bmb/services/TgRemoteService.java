@@ -92,4 +92,5 @@ public class TgRemoteService extends TelegramLongPollingBot {
         inline.setCallbackData(data);
         return inline;
     }
+
 }
