@@ -1,7 +1,5 @@
 package ru.job4j.bmb.model;
 
-import java.util.Objects;
-
 public class User {
 
     private Long id;
@@ -12,6 +10,10 @@ public class User {
         this.chatId = chatId;
         this.clientId = clientId;
         this.id = id;
+    }
+
+    public  User() {
+
     }
 
     public Long getId() {
@@ -38,20 +40,4 @@ public class User {
         this.chatId = chatId;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        User user = (User) o;
-        return clientId == user.clientId && chatId == user.chatId && Objects.equals(id, user.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, clientId, chatId);
-    }
 }

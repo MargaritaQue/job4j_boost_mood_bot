@@ -1,4 +1,4 @@
-package ru.job4j.repository;
+package ru.job4j.bmb.repository;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
@@ -24,6 +24,7 @@ public class UserFakeRepository implements UserRepository {
         return userMap.get(clientId);
     }
 
+    @Override
     public void save(User user) {
         userMap.put(user.getClientId(), user);
     }
