@@ -1,9 +1,9 @@
-package ru.job4j.service;
+package ru.job4j.bmb.service;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
-public class ReminderService {
+public class MoodService {
 
     @PostConstruct
     public void init() {

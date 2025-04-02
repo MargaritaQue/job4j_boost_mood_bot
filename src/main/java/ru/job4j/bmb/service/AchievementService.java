@@ -1,9 +1,9 @@
-package ru.job4j.engine;
+package ru.job4j.bmb.service;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
-public class RecommendationEngine {
+public class AchievementService {
 
     @PostConstruct
     public void init() {

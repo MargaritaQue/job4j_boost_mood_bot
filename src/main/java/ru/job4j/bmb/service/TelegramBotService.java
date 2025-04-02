@@ -1,4 +1,4 @@
-package ru.job4j.bmb.services;
+package ru.job4j.bmb.service;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;

@@ -1,4 +1,4 @@
-package ru.job4j.aspect;
+package ru.job4j.bmb.aspect;
 
 public class LoggingAspect {
 }
