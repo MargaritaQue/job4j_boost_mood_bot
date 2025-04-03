@@ -6,9 +6,14 @@ import java.util.Objects;
 @Entity
 @Table(name = "mb_user")
 public class User {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "client_id", unique = true)
     private long clientId;
+
+    @Column(name = "chat_id")
     private long chatId;
 
     public User(long chatId, long clientId, Long id) {
