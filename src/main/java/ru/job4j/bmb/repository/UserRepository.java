@@ -6,11 +6,7 @@ import ru.job4j.bmb.model.User;
 
 import java.util.List;
 
-public interface UserRepository {
-
-    void save(User user);
-
+@Repository
+public interface UserRepository extends CrudRepository<User, Long> {
     List<User> findAll();
-
-    User findByClientId(Long clientId);
 }
