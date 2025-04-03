@@ -1,5 +1,10 @@
 package ru.job4j.bmb.model;
 
+import jakarta.persistence.*;
+import java.util.Objects;
+
+@Entity
+@Table(name = "mb_user")
 public class User {
 
     private Long id;
@@ -13,7 +18,6 @@ public class User {
     }
 
     public  User() {
-
     }
 
     public Long getId() {
@@ -40,4 +44,16 @@ public class User {
         this.chatId = chatId;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(id, user.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 }
