@@ -17,6 +17,12 @@ public class Award {
 
     private int days;
 
+    public Award( String title, String descriptionint, int days) {
+        this.days = days;
+        this.title = title;
+        this.description = description;
+    }
+
     public int getDays() {
         return days;
     }
